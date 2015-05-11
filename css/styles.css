@@ -1,0 +1,169 @@
+/* Core  */
+html {
+  font-family: 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
+}
+body {
+  background-color: #fff;
+  color: #000;
+  text-align: center;
+  margin: 0;
+}
+a {
+  color: #EA5537;
+}
+h1 {
+  font-size: 1.5em;
+  font-weight: normal;
+}
+h2 {
+  font-size: 1.2em;
+  font-weight: normal;
+}
+h3 {
+  font-size: 1em;
+  font-weight: normal;
+}
+h4 {
+  font-size: .8em;
+  font-weight: normal;
+}
+h5 {
+  font-size: 0.7em;
+  font-weight: normal;
+}
+h6 {
+  font-size: 0.6em;
+  line-height: 1.38461546;
+  font-weight: 400;
+}
+header h1,
+header p {
+  margin: 0;
+}
+header p {
+  color: #666;
+}
+.title-line {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+}
+.title-line:before, .title-line:after {
+  content: '\a0';
+  flex-grow: 1;
+  height: 1px;
+  position: relative;
+  top: 0.6em;
+  background-color: #ccc;
+}
+.title-line:before {
+  margin-right: 0.625em;
+}
+.title-line:after {
+  margin-left: 0.625em;
+}
+figure {
+  margin: 0;
+}
+img { 
+  width: 100%;
+  display: block;
+}
+.site-content-wrap {
+  margin: 0 auto;
+}
+header {
+  margin: 1.5em 0;
+}
+header img {
+  display: inline;
+}
+.header-title{
+	position: relative;
+	text-align: center;
+	display: block;
+}
+.logo {
+	position: relative;
+	text-align: center;
+	display: block;
+}
+.featured-work {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: stretch;
+}
+.flex-heading {
+  flex: 1 100%;
+}
+.featured-work figure {
+    height: 20em;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.featured-item {
+  flex: 1 0 100%;
+  margin: 0 0 2em 0;
+}
+.featured-item.first {
+  margin-left: 0;
+}
+.featured-item h3, 
+.featured-item a {
+  padding: 0 .5em;
+}
+.featured-item h3 {
+  margin: .5em 0 0;
+}
+.logo img {
+  max-width: 42px;
+}
+.banner-wrapper {
+  margin-bottom: 2em;
+}
+footer {
+  margin:2em 0 0.5em 0;
+  color: #666;
+  font-size: .75em;
+} 
+/* Responsive queries */
+@media (min-width: 30em) {
+body {
+  margin: 0 1.5em;
+}  
+.featured-item figure{
+    height: 9.5em;
+}
+.featured-item {
+  flex: 1 0 30%;
+  margin: .7em 0 0 .7em;
+}
+.header-title{
+	position: relative;
+	text-align: right;
+	display: inline-block;
+	width: 68%;
+}
+.logo {
+	position: relative;
+	text-align: left;
+	display: inline-block;
+	width: 30%;
+}
+h1.title-line:before, h1.title-line:after {
+	display: none;
+}
+h1.title-line {
+  text-align: right;
+  display: block;
+}
+}
+@media (min-width: 37.5em) {
+.featured-item figure{
+    height: 13em;
+}
+}
